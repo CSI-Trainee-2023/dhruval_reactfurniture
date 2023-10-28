@@ -57,3 +57,58 @@ html,body{
     margin-top: 1.4vw;
     border: 1px solid black;
 }
+
+.searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 1%;
+    margin: 5% 0% 5% 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.searchBar img{
+    width: 24px;
+    height: 24px;
+}
+
+.Search{
+    border: none;  
+    box-shadow: none;
+    padding: 5px; 
+    background-color: transparent; 
+}
+
+.searchBar button{
+    width: 30%;
+    height: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #4C8787;
+    color: white;
+}
+
+.props{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.prop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.prop img{
+    width: 32px;
+}
+
+.prop h4{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #00000080;
+}

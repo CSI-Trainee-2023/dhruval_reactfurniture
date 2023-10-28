@@ -25,8 +25,8 @@ export default function NavBar() {
         <h3>ABOUT US</h3>
         <h3>NEWS</h3>
         <h3>CONTACT US</h3>
-        
       </div>
+      
       <div className="line"></div>
     </div>
   );
