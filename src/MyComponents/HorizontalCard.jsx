@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import ViewButton from "./ViewButton";
 import PropTypes from "prop-types";
 
@@ -11,7 +11,7 @@ export default function HorizontalCard(props) {
         <ViewButton
           image="image-url"
           proName={props.title}
-          price={19.99}
+          price={props.price}
           details="Product details"
           list={[]}
           title="VIEW DETAILS"
@@ -24,4 +24,5 @@ export default function HorizontalCard(props) {
 HorizontalCard.propTypes = {
   image: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
 };

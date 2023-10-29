@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.banner-carousel {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4%;
+}
+
+.right-btn,
+.left-btn {
+  border: none;
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  /* transform: translateY(-50%); */
+  padding: 10px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000050;
+  z-index: 1;
+}
+
+.right-btn,
+.left-btn:hover {
+  cursor: pointer;
+}
+
+.left-btn {
+  left: 0;
+}
+
+.right-btn {
+  right: 0;
+}
+
+.img-container {
+  display: flex;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.Mycard img {
+  width: 100vw;
+}

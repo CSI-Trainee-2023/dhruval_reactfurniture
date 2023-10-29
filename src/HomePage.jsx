@@ -1,9 +1,8 @@
-import React from "react";
+// import React from "react";
 import NavBar from "./MyComponents/NavBar";
 import MyCarousel from "./MyComponents/Carousel";
 import HorizontalCard from "./MyComponents/HorizontalCard";
 import VerticalCard from "./MyComponents/VerticalCard";
-import ViewButton from "./MyComponents/ViewButton";
 import Footer from "./MyComponents/Footer";
 
 import searchIcon from "./assets/icons/search.png";
@@ -36,9 +35,9 @@ const verticalImages = [
       "A square clear box is a transparent, four-sided container with see-through walls, often made of glass, allowing easy visibility of its contents.",
   },
   {
-    id: "basket.png",
-    desc: "Metal Wire Basket",
-    price: "199.9$",
+    id: "chatai.jpg",
+    desc: "chatai",
+    price: "300$",
     details:
       "A metal wire basket is a sturdy container constructed from interwoven metal wires, forming an open, breathable structure ideal for storage and organization.",
   },
@@ -64,9 +63,9 @@ const verticalImages = [
       "A metal wire basket is a sturdy container constructed from interwoven metal wires, forming an open, breathable structure ideal for storage and organization.",
   },
   {
-    id: "basket.png",
-    desc: "Metal Wire Basket",
-    price: "199.9$",
+    id: "rug.jpg",
+    desc: "Floor Rug",
+    price: "200.9$",
     details:
       "A metal wire basket is a sturdy container constructed from interwoven metal wires, forming an open, breathable structure ideal for storage and organization.",
   },
@@ -127,7 +126,7 @@ export default function HomePage() {
 
       <div className="searchBar">
         <img src={searchIcon} alt="" />
-        <input type="text" value="" className="Search" />
+        <input type="text"  className="Search" />
         <button>Search</button>
       </div>
 
@@ -154,10 +153,12 @@ export default function HomePage() {
         <HorizontalCard
           image="../src/assets/images/vintageChair.png"
           title="INY VINTAGE CHAIR"
+          price="20$"
         />
         <HorizontalCard
           image="../src/assets/images/vase.png"
           title="LARGE TERRACOTA VASE"
+          price="30$"
         />
       </div>
 
@@ -183,7 +184,7 @@ export default function HomePage() {
         <div className="topRatingHolder">
           {topRating.map((element) => (
             <VerticalCard
-              key={element.id} // Add a unique key
+              key={element.id} 
               image={`../src/assets/items/${element.id}`}
               title1={element.desc}
               title2={element.price}

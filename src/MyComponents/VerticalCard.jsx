@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import ViewButton from './ViewButton';
 import PropTypes from 'prop-types';
 import ratings from '../assets/icons/ratings.png'
@@ -20,7 +20,7 @@ export default function VerticalCard(props) {
       <div className="hoverBox">
         <img src={props.image} alt={`Image of ${props.title1}`} />
         <div className="hoverContent">
-          <h1>DECOR</h1>
+          <h1>{props.title1}</h1>
           <p>
             {props.details ||
               'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur sint officia voluptatibus quos odio doloremque aut vel, magni sapiente expedita.'}

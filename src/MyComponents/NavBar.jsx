@@ -1,15 +1,9 @@
-import React, { useState } from "react";
+// import React from "react";
 import brandLogo from "../assets/icons/Brand.png";
 import cart from "../assets/icons/Cart.png";
 import profile from "../assets/icons/Profile.png";
 
 export default function NavBar() {
-  const [isNavOpen, setNavOpen] = useState(false);
-
-  const toggleNav = () => {
-    setNavOpen(!isNavOpen);
-  };
-
   return (
     <div className="nav">
       <div className="upper-nav">
@@ -19,15 +13,10 @@ export default function NavBar() {
         <div className="upper-right">
           <img src={cart} alt="CART" />
           <img src={profile} alt="PROFILE" />
-          <div className="hamburger" onClick={toggleNav}>
-            <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-            <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-            <div className={`bar ${isNavOpen ? "open" : ""}`}></div>
-          </div>
         </div>
       </div>
 
-      <div className={`lower-navBar ${isNavOpen ? "open" : ""}`}>
+      <div className="lower-navBar">
         <h3>HOME</h3>
         <h3>STORE</h3>
         <h3>ACCESSORIES</h3>
@@ -37,7 +26,7 @@ export default function NavBar() {
         <h3>NEWS</h3>
         <h3>CONTACT US</h3>
       </div>
-
+      
       <div className="line"></div>
     </div>
   );
