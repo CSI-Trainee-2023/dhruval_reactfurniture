@@ -62,8 +62,8 @@ html,body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 1%;
     width: 50%;
-    padding: 1%;
     margin: 5% 0% 5% 25%;
     border: 1px solid black;
     border-radius: 10px;
@@ -77,14 +77,15 @@ html,body{
 .Search{
     border: none;  
     box-shadow: none;
-    padding: 5px; 
+    padding: 1vw; 
+    width: 6vw;
     background-color: transparent; 
 }
 
 .searchBar button{
     width: 30%;
     height: 100%;
-    padding: 8px;
+    padding: 2%;
     border-radius: 8px;
     background-color: #4C8787;
     color: white;
@@ -245,7 +246,7 @@ html,body{
 
   .bedsheet-banner img{
     width: 100%;
-    height: 60vh;
+
   }
 
   .topRating {
@@ -265,15 +266,17 @@ html,body{
   
   .topRatingHolder {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    align-items: flex-start;
   }
   
   .topRatingCard {
     background-color: white;
-    margin-bottom: 10px; 
-    flex: 0 0 33.33%;
-  }  
+    margin: 20px;
+    display: flex;
+    width: 400px;
+  }
   
   .topRatingCard img {
     width: 100%;
@@ -310,7 +313,8 @@ html,body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 6px;
+    line-height: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .headingLeft h3 {
@@ -324,21 +328,24 @@ html,body{
     justify-content: center;
     align-items: center;
     outline: 1px solid black;
+    border-radius: 5px;
   }
   
   .emailInputField input {
     border: none;
     width: 100%;
+    height: 6vh;
     padding: 9px 5px;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   
   .emailInputField a {
-    background-color: #4C8787;
+    background-color: #065f5f;
+    height: 6vh;
   }
   
   .emailInputField a img {
-    width: 20px;
+    width: 24px;
     padding: 10px 25px;
   }
   
@@ -451,5 +458,116 @@ html,body{
   .brandFooter h3 {
     font-weight: 200;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  @media screen and (max-width: 1100px) {
+    .overImageContent{
+      background-color: rgba(255, 255, 255, 0.648);
+    }
+    .overImageContent h3, h4{
+      display: none;
+    }
+
+    .props{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 870px) {
+    .subscribePromotion{
+      justify-content: center;
+    }
+    .emailInputField{
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    .subscribePromotion h2, .subscribePromotion h3{
+      line-height: normal;
+    }
+    .emailInputField{
+      width: 100%;
+    }
+    .horizontalCard:last-child{
+      display: none;
+    }
+    .view{
+      font-size: 1.8vw;
+      padding: 10px 20px;
+    }
+    .content h1{
+      font-size: 0.8rem;
+      padding: 20px 0;
+    }
+    .content h3{
+      font-size: 0.9rem;
+    }
+    ul:first-child li, .container, .banner{
+      display: none;
+    }
+    .nav{
+      width: 100%;
+    }
+    .upper img{
+      width: 40%;
+    }
+    .main{
+      margin: 0;
+      height: 40vh;
+    }
+    .horizontalCard{
+      width: 100%;
+      height: 30vh;
+    }
+    .verticalCardHolder{
+      flex-wrap: nowrap;
+      overflow: scroll;
+      position: relative;
+      justify-content: flex-start;
+    }
+    .topRatingCard{
+      width: 100%;
+    }
+    .topRatingCard img{
+      width: 30%;
+    }
+    .cardContent h2{
+      font-size: 1.2rem;
+    }
+    .cardContent{
+      overflow: hidden;
+    }
+    .priceTopRating h3{
+      padding: 0;
+    } 
+    .footer h2{
+      font-size: 1rem;
+      padding: 25px 0;
+      text-align: center;
+    }
+    .footer h2:first-child{
+      padding: 40px 0 0 0;
+    }
+    .footer p{
+      font-size: 4vw;
+      width: 80%;
+      margin: auto;
+    }
+    .footer ul li, .links, .update{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 426px){
+    .props{
+      display: none;
+    }
+
+    .lower-navBar{
+      display: none;
+    }
+
+    
   }
   

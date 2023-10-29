@@ -11,6 +11,7 @@ import shipping from "./assets/icons/shippingIcon.png";
 import refund from "./assets/icons/refundIcon.png";
 import support from "./assets/icons/supportIcon.png";
 import bedsheet from "./assets/images/bedsheet.png";
+import email from "./assets/icons/email.png"
 
 const verticalImages = [
   {
@@ -199,9 +200,9 @@ export default function HomePage() {
           <h3>Subscribe for the latest deals and promotions</h3>
         </div>
         <div className="emailInputField">
-          <input type="email" id="emailInput" />
+          <input type="email" id="emailInput" placeholder="Enter Your e-mail address" />
           <a href="#">
-            <img src="../src/assets/icons/email.png" alt="" />
+            <img src={email} alt="email" />
           </a>
         </div>
       </div>
