@@ -1,8 +1,8 @@
 import React from "react";
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
-import image1 from '../assets/banner-img-1.png'
-import image2 from '../assets/banner-img-2.png'
+import image1 from '../assets/images/banner-img-1.png'
+import image2 from '../assets/images/banner-img-2.png'
 
 export default function MyCarousel() {
     return (
