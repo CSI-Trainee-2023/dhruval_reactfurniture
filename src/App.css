@@ -31,6 +31,10 @@ html,body{
     margin: 20px;
 }
 
+.upper-right{
+  display: flex;
+}
+
 .upper-right img{
     width: 36px;
     margin: 20px;
@@ -44,11 +48,38 @@ html,body{
     justify-content: center;
 }
 
-.lower-navBar h3{
+.lower-navBar a{
     margin-left: 33px;
     margin-top: 10px;
     font-size: 1.8vw;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.burger{
+  display: none;
+}
+
+.hamburger{
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  padding: 15px;
+  background-color: #f6dd00;
+  position: absolute;
+  border-radius: 10px;
+  top: 80px;
+  right: 20px;
+  z-index: 3;
+}
+
+.hamburger a{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+  margin: 10px;
+}
+
+.open{
+  display: flex;
 }
 
 .line{
@@ -493,6 +524,12 @@ html,body{
     .horizontalCard:last-child{
       display: none;
     }
+    .burger{
+      display: none;
+    }
+    .profile{
+      display: none;
+    }
     .view{
       font-size: 1.8vw;
       padding: 10px 20px;
@@ -528,7 +565,7 @@ html,body{
       justify-content: flex-start;
     }
 
-    /* .topRating{
+    /* .topRatingHolder{
       flex-wrap: nowrap;
       overflow: scroll;
       position: relative;
@@ -572,11 +609,11 @@ html,body{
     .props{
       display: none;
     }
-
     .lower-navBar{
       display: none;
     }
-
-    
+    .burger{
+      display: block;
+    }
   }
   

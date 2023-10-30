@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import  { useRef } from 'react';
 import banner1 from '../assets/images/banner-img-1.png';
 import banner2 from '../assets/images/banner-img-2.png';
 
