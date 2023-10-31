@@ -19,7 +19,7 @@ export default function NavBar() {
           <img src={brandLogo} alt="BRAND" />
         </div>
         <div className="upper-right">
-          <img src={cart} alt="CART" />
+          <a href="/Cart.jsx"><img src={cart} alt="CART" /></a>
           <img className="profile" src={profile} alt="PROFILE" />
           <img
             className={`burger ${isHamburgerOpen ? 'open' : ''}`}

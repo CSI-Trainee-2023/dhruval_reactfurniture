@@ -33,11 +33,14 @@ html,body{
 
 .upper-right{
   display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 15px;
 }
 
 .upper-right img{
-    width: 36px;
-    margin: 20px;
+    width: 40px;
+    height: 40px;
 }
 
 .lower-navBar{

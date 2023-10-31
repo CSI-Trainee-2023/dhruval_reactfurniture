@@ -35,7 +35,7 @@ const verticalImages = [
       "A square clear box is a transparent, four-sided container with see-through walls, often made of glass, allowing easy visibility of its contents.",
   },
   {
-    id: "chatai.jpg",
+    id: "chatai.png",
     desc: "chatai",
     price: "300$",
     details:
@@ -63,7 +63,7 @@ const verticalImages = [
       "A metal wire basket is a sturdy container constructed from interwoven metal wires, forming an open, breathable structure ideal for storage and organization.",
   },
   {
-    id: "rug.jpg",
+    id: "rug.png",
     desc: "Floor Rug",
     price: "200.9$",
     details:
