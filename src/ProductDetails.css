@@ -108,3 +108,7 @@
     cursor: pointer;
 }
 
+#addtoCart:active{
+    background-color: #3f7272;
+}
+

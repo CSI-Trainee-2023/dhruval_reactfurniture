@@ -3,7 +3,6 @@ import brandLogo from '../assets/icons/Brand.png';
 import cart from '../assets/icons/Cart.png';
 import profile from '../assets/icons/Profile.png';
 import burger from '../assets/icons/hamburger.png';
-import '../App.css';
 
 export default function NavBar() {
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
@@ -19,7 +18,7 @@ export default function NavBar() {
           <img src={brandLogo} alt="BRAND" />
         </div>
         <div className="upper-right">
-          <a href="/Cart.jsx"><img src={cart} alt="CART" /></a>
+          <a href="/Cart"><img src={cart} alt="CART" /></a>
           <img className="profile" src={profile} alt="PROFILE" />
           <img
             className={`burger ${isHamburgerOpen ? 'open' : ''}`}

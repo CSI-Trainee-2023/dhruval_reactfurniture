@@ -40,9 +40,9 @@ export default function ProductDetails() {
         </div>
 
         <div className="priceBar">
-          <h1>Checked Duvet Cover Set</h1>
-          <h3>39.33$</h3>
-          <h4>Light Khaki green/white checks</h4>
+          <h1>{location.state.productName}</h1>
+          <h3>{location.state.price}</h3>
+          <h4>{location.state.details}</h4>
 
           <img src={location.state.image}id="desImg"   />
 
